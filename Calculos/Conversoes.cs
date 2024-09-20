@@ -24,23 +24,20 @@ namespace Calculos
     /// <param name="temperatura">A temperatua a converter.</param>
     /// <returns>Retorna o resultado da conversão da temperatura.</returns>
 
-	public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
-    {
-        if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
-        {
-            return (temperatura * 1.8000 + 32);
-        }
-        else if (conversao == ConversaoTemperatura.FahrenheitCelsius)
-        {
-            return ((temperatura - 32) / 1.8000);
-        }
+		public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
+		{
+			if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
+			{
+				return (temperatura * 1.8000 + 32);
+			}
+			else if (conversao == ConversaoTemperatura.FahrenheitCelsius)
+			{
+				return ((temperatura - 32) / 1.8000);
+			}
 
-        return -1;
-    }
-
-
-		
-		
+			return -1;
+		}
+	
 		
 	}
 	
